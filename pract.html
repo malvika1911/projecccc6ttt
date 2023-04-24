@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script>
+           
+               function ob()
+               {
+                var o=document.getElementById('txt');
+                if(o.value=="")
+                {
+                    window.alert("cannot be null");
+                    return false;
+                }
+                else{
+                    confirm("logged");
+                    return true;
+                }
+               }
+              function vall()
+               {
+                var i=document.getElementById('tx');
+                if(i.value.length<2)
+                {
+                    window.alert("short");
+                    return false;
+                }
+                else{
+                    confirm("logged");
+                    return true;
+            }
+        }
+        function pass()
+        {
+            var p=document.getElementById('pass');
+            if(p.value.length<8)
+            {
+                window.alert("password is small");
+                return false;
+            }
+            else{
+                    confirm("strong");
+                    return true;
+            }
+        }
+    
+              
+            </script>
+    </head>
+    <body>
+        <form>
+            username:<input type="text" id="txt" placeholder="enter uxs" onblur="ob()"/>
+          
+            useame:<input type="text" id="tx"  placeholder="enter uxs" onblur="vall()"/>
+            pass:<input type="password" id="pass" onblur="pass()"/>
+            
+            <button><input type=submit  value="click here" ></button>
+        </form>
+    </body>
+</html>
